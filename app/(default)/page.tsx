@@ -1,22 +1,22 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Phát Garage Củ Chi - Chăm sóc xe bằng công nghệ & tâm huyết",
+  description: "Hệ thống sửa chữa và bảo dưỡng ô tô hiện đại nhất tại Củ Chi. Chuyên bảo dưỡng, sửa chữa, detailing và cứu hộ 24/7.",
 };
 
-import Hero from "@/components/hero-home";
-import BusinessCategories from "@/components/business-categories";
-import FeaturesPlanet from "@/components/features-planet";
-import LargeTestimonial from "@/components/large-testimonial";
-import Cta from "@/components/cta";
+import Hero from "@/components/Hero";
+import EventSection from "@/components/EventSection";
+import Services from "@/components/Services";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <BusinessCategories />
-      <FeaturesPlanet />
-      <LargeTestimonial />
-      <Cta />
+      <EventSection />
+      <Services />
+      <WhyChooseUs />
+      <Contact />
     </>
   );
 }
