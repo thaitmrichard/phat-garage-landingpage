@@ -13,31 +13,34 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <Link href="/" className="flex items-center gap-2 mb-6 group">
-              <div className="w-10 h-10 bg-brand-red flex items-center justify-center rounded-sm transform group-hover:rotate-12 transition-transform">
+              <div className="w-10 h-10 bg-brand-orange flex items-center justify-center rounded-sm transform group-hover:rotate-12 transition-transform">
                 <span className="text-white font-black text-xl italic uppercase font-mono">P</span>
               </div>
               <span className="text-2xl font-black tracking-tighter text-white uppercase italic">
-                Phát <span className="text-brand-red">Garage</span>
+                Phát <span className="text-brand-orange">Garage</span>
               </span>
             </Link>
-            <p className="text-gray-500 text-sm italic max-w-sm mb-8 leading-relaxed font-black uppercase tracking-widest">
-              Nhuận Đức, Củ Chi, TP. Hồ Chí Minh
+            <p className="text-gray-500 text-sm italic max-w-sm mb-4 leading-relaxed font-black uppercase tracking-widest">
+              27B Nguyễn Thị Rành, xã Tân An Hội, TP HCM
+            </p>
+            <p className="text-brand-orange text-lg font-black uppercase tracking-widest mb-8">
+              Hotline: 033333 8481
             </p>
           </div>
 
           <div className="flex flex-col items-center gap-6">
             <h4 className="text-white font-black uppercase tracking-[0.3em] text-xs">Kết nối với chúng tôi</h4>
             <div className="flex items-center gap-6 text-gray-500">
-              <Link href="#" className="hover:text-brand-red transition-all hover:scale-125">
+              <Link href="#" className="hover:text-brand-orange transition-all hover:scale-125">
                 <Facebook size={24} />
               </Link>
-              <Link href="#" className="hover:text-brand-red transition-all hover:scale-125">
+              <Link href="#" className="hover:text-brand-orange transition-all hover:scale-125">
                 <Instagram size={24} />
               </Link>
-              <Link href="#" className="hover:text-brand-red transition-all hover:scale-125">
+              <Link href="#" className="hover:text-brand-orange transition-all hover:scale-125">
                 <Youtube size={24} />
               </Link>
-              <Link href="#" className="hover:text-brand-red transition-all hover:scale-125">
+              <Link href="#" className="hover:text-brand-orange transition-all hover:scale-125">
                 <Twitter size={24} />
               </Link>
             </div>

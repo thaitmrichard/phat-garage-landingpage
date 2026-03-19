@@ -2,29 +2,39 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Wrench, Car, Sparkles, LifeBuoy } from 'lucide-react';
+import { Search, ClipboardList, CheckSquare, Settings, CarFront, HeartHandshake } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 const services = [
   {
-    title: "Bảo dưỡng định kỳ",
-    description: "Quy trình bảo dưỡng tiêu chuẩn hãng, kiểm tra toàn diện 50+ hạng mục giúp xe vận hành êm ái, bền bỉ.",
-    icon: Car,
+    title: "Tiếp nhận xe",
+    description: "Tra cứu bằng số VIN để biết thông tin chính xác xe của quý khách. Chúng tôi nắm rõ sơ đồ mạch điện, hình vẽ chi tiết đến từng bộ phận.",
+    icon: Search,
+  },
+  {
+    title: "Tư vấn & Chẩn đoán",
+    description: "Advisor chuyên nghiệp chẩn đoán lỗi bằng thiết bị hiện đại, đưa ra hướng xử lý và báo giá chi tiết, minh bạch.",
+    icon: ClipboardList,
+  },
+  {
+    title: "Chọn hướng xử lý",
+    description: "Khách hàng nhận báo giá, chọn phương án thi công và phụ tùng thay thế phù hợp với nhu cầu và ngân sách.",
+    icon: CheckSquare,
   },
   {
     title: "Sửa chữa chuyên sâu",
-    description: "Xử lý triệt để các lỗi về động cơ, hộp số, hệ thống điện bằng máy chẩn đoán lỗi chuyên dụng thế hệ mới.",
-    icon: Wrench,
+    description: "Đặt hàng phụ tùng chính hãng và tiến hành sửa chữa theo quy trình kỹ thuật nghiêm ngặt, đảm bảo chất lượng cao nhất.",
+    icon: Settings,
   },
   {
-    title: "Chăm sóc xe (Detailing)",
-    description: "Đánh bóng, phủ Ceramic, vệ sinh nội ngoại thất chuyên sâu giúp xế yêu luôn sáng bóng như mới.",
-    icon: Sparkles,
+    title: "Kiểm tra & Bàn giao",
+    description: "Kiểm tra kỹ lưỡng toàn bộ hạng mục trước khi bàn giao xe cho khách hàng, đảm bảo xe vận hành hoàn hảo.",
+    icon: CarFront,
   },
   {
-    title: "Cứu hộ 24/7",
-    description: "Dịch vụ cứu hộ nhanh chóng, hỗ trợ tận nơi tại khu vực Củ Chi và các vùng lân cận bất kể ngày đêm.",
-    icon: LifeBuoy,
+    title: "Bảo hành & Chăm sóc",
+    description: "Chăm sóc khách hàng sau sửa chữa, đồng hành cùng quý khách bằng chính sách bảo hành và hậu mãi tận tâm.",
+    icon: HeartHandshake,
   },
 ];
 
@@ -33,7 +43,7 @@ export default function Services() {
     <section id="services" className="py-24 bg-black relative overflow-hidden">
       {/* Background Text Accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-black text-white/[0.02] uppercase italic select-none pointer-events-none">
-        SERVICES
+        PROCESS
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -44,15 +54,15 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-brand-red font-black uppercase tracking-[0.3em] text-sm mb-4 block">Dịch vụ của chúng tôi</span>
+            <span className="text-brand-orange font-black uppercase tracking-[0.3em] text-sm mb-4 block">Quy trình chuyên nghiệp</span>
             <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">
-              GIẢI PHÁP TOÀN DIỆN<br />
-              <span className="text-brand-red">CHO XẾ YÊU</span>
+              6 BƯỚC SỬA XE<br />
+              <span className="text-brand-orange">TIÊU CHUẨN</span>
             </h2>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <ServiceCard 
               key={index}

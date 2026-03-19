@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import EventSection from "@/components/EventSection";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import RegistrationQR from "@/components/RegistrationQR";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <EventSection />
       <Services />
       <WhyChooseUs />
+      <RegistrationQR />
       <Contact />
     </>
   );

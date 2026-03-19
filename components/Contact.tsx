@@ -17,35 +17,35 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-brand-red font-black uppercase tracking-[0.3em] text-sm mb-4 block">Liên hệ với chúng tôi</span>
+            <span className="text-brand-orange font-black uppercase tracking-[0.3em] text-sm mb-4 block">Liên hệ với chúng tôi</span>
             <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter mb-8 leading-tight">
               SẴN SÀNG PHỤC VỤ<br />
-              <span className="text-brand-red">XẾ YÊU CỦA BẠN</span>
+              <span className="text-brand-orange">XẾ YÊU CỦA BẠN</span>
             </h2>
             
             <div className="space-y-8 mb-12">
               <div className="flex items-start gap-6">
-                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-brand-red shrink-0 border border-white/5">
+                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-brand-orange shrink-0 border border-white/5">
                   <Phone size={24} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold uppercase text-sm tracking-widest mb-1">Hotline 24/7</h3>
-                  <p className="text-2xl font-black text-brand-red tracking-tighter">0902 504 808</p>
+                  <p className="text-2xl font-black text-brand-orange tracking-tighter">033333 8481</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-6">
-                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-brand-red shrink-0 border border-white/5">
+                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-brand-orange shrink-0 border border-white/5">
                   <MapPin size={24} />
                 </div>
                 <div>
                   <h3 className="text-white font-bold uppercase text-sm tracking-widest mb-1">Địa chỉ</h3>
-                  <p className="text-gray-400">Nhuận Đức, Củ Chi, TP. Hồ Chí Minh</p>
+                  <p className="text-gray-400">27B Nguyễn Thị Rành, xã Tân An Hội, TP HCM</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-6">
-                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-brand-red shrink-0 border border-white/5">
+                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-brand-orange shrink-0 border border-white/5">
                   <Clock size={24} />
                 </div>
                 <div>
@@ -55,7 +55,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <Button size="lg" className="bg-brand-red hover:bg-red-700 text-white font-black uppercase tracking-widest w-full sm:w-auto py-7 px-10 h-auto gap-3 group">
+            <Button size="lg" className="bg-brand-orange hover:bg-orange-700 text-white font-black uppercase tracking-widest w-full sm:w-auto py-7 px-10 h-auto gap-3 group">
               Đặt lịch ngay qua Zalo <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
           </motion.div>
@@ -72,12 +72,12 @@ export default function Contact() {
             <div className="absolute inset-0 bg-zinc-900 flex items-center justify-center group overflow-hidden">
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20 group-hover:scale-110 transition-transform duration-1000" />
               <div className="relative z-10 text-center p-8">
-                <div className="w-20 h-20 bg-brand-red/20 rounded-full flex items-center justify-center text-brand-red mx-auto mb-6 animate-bounce">
+                <div className="w-20 h-20 bg-brand-orange/20 rounded-full flex items-center justify-center text-brand-orange mx-auto mb-6 animate-bounce">
                   <MapPin size={40} />
                 </div>
                 <h3 className="text-2xl font-black text-white uppercase italic tracking-tighter mb-4">Tìm chúng tôi trên bản đồ</h3>
                 <p className="text-gray-500 max-w-sm mx-auto mb-8">Google Maps sẽ được tích hợp tại đây để khách hàng dễ dàng tìm đường đến garage.</p>
-                <Button variant="outline" className="border-brand-red text-brand-red hover:bg-brand-red hover:text-white font-bold uppercase">
+                <Button variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold uppercase">
                   Mở Google Maps
                 </Button>
               </div>

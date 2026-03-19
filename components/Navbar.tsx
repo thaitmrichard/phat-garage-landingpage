@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -38,11 +39,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-brand-red flex items-center justify-center rounded-sm transform group-hover:rotate-12 transition-transform">
-              <span className="text-white font-black text-xl italic uppercase font-mono">P</span>
+            <div className="relative w-12 h-12 transform group-hover:scale-110 transition-transform">
+              <Image 
+                src="/images/logo_phat.png" 
+                alt="Phát Garage Logo" 
+                fill
+                className="object-contain"
+              />
             </div>
             <span className="text-2xl font-black tracking-tighter text-white uppercase italic">
-              Phát <span className="text-brand-red">Garage</span>
+              Phát <span className="text-brand-orange">Garage</span>
             </span>
           </Link>
 
@@ -52,13 +58,13 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-gray-300 hover:text-brand-red transition-colors uppercase tracking-widest"
+                className="text-sm font-medium text-gray-300 hover:text-brand-orange transition-colors uppercase tracking-widest"
               >
                 {link.name}
               </Link>
             ))}
             <Button 
-              className="bg-brand-red hover:bg-red-700 text-white font-bold uppercase tracking-tighter transition-all hover:scale-105 active:scale-95"
+              className="bg-brand-orange hover:bg-orange-700 text-white font-bold uppercase tracking-tighter transition-all hover:scale-105 active:scale-95"
             >
               Đặt lịch ngay
             </Button>
@@ -88,14 +94,14 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-xl font-bold text-white hover:text-brand-red transition-colors uppercase tracking-widest"
+                  className="text-xl font-bold text-white hover:text-brand-orange transition-colors uppercase tracking-widest"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
               <Button 
-                className="bg-brand-red hover:bg-red-700 text-white font-bold uppercase tracking-tighter w-full py-6 text-lg"
+                className="bg-brand-orange hover:bg-orange-700 text-white font-bold uppercase tracking-tighter w-full py-6 text-lg"
               >
                 Đặt lịch ngay
               </Button>
