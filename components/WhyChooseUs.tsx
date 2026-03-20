@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
     <section id="about" className="py-24 bg-zinc-900 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -47,15 +47,15 @@ export default function WhyChooseUs() {
             <p className="text-gray-400 text-lg leading-relaxed mb-10">
               Chúng tôi không chỉ sửa xe, chúng tôi chăm sóc sự an toàn của bạn. Tại Phát Garage Củ Chi, mỗi chiếc xe đều được đối xử như một tác phẩm nghệ thuật cần sự tỉ mỉ và chuyên nghiệp cao nhất.
             </p>
-            
+
             <div className="grid grid-cols-2 gap-8">
               <div className="border-l-2 border-brand-orange pl-6">
-                <p className="text-3xl font-black text-white italic tracking-tighter mb-1">1000+</p>
+                <p className="text-3xl font-black text-white italic tracking-tighter mb-1"></p>
                 <p className="text-xs text-gray-500 uppercase font-bold tracking-widest">Khách hàng tin cậy</p>
               </div>
               <div className="border-l-2 border-brand-orange pl-6">
-                <p className="text-3xl font-black text-white italic tracking-tighter mb-1">10+</p>
-                <p className="text-xs text-gray-500 uppercase font-bold tracking-widest">Năm kinh nghiệm</p>
+                <p className="text-3xl font-black text-white italic tracking-tighter mb-1"></p>
+                <p className="text-xs text-gray-500 uppercase font-bold tracking-widest">Nhiều năm kinh nghiệm</p>
               </div>
             </div>
           </motion.div>

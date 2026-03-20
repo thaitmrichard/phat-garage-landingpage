@@ -11,12 +11,12 @@ export default function EventSection() {
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-red to-transparent opacity-50" />
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-red to-transparent opacity-50" />
-      
+
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-zinc-900 border border-white/10 p-8 md:p-16 rounded-2xl relative z-10 overflow-hidden">
           {/* Accent Glow */}
           <div className="absolute -top-24 -right-24 w-64 h-64 bg-brand-red/10 blur-[100px] rounded-full" />
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -31,7 +31,7 @@ export default function EventSection() {
               <p className="text-gray-400 mb-8 text-lg border-l-4 border-brand-red pl-6">
                 Chào đón diện mạo mới, công nghệ mới! Hãy đến và trải nghiệm dịch vụ chăm sóc xe chuyên nghiệp nhất khu vực Củ Chi với hàng ngàn ưu đãi hấp dẫn.
               </p>
-              
+
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-4 text-white">
                   <div className="w-10 h-10 bg-brand-red/20 rounded-full flex items-center justify-center text-brand-red group hover:bg-brand-red hover:text-white transition-colors">
@@ -49,7 +49,7 @@ export default function EventSection() {
                   <div className="w-10 h-10 bg-brand-red/20 rounded-full flex items-center justify-center text-brand-red group hover:bg-brand-red hover:text-white transition-colors">
                     <MapPin size={20} />
                   </div>
-                  <span className="font-bold uppercase tracking-wider">Nhuận Đức, Củ Chi, TP. Hồ Chí Minh</span>
+                  <span className="font-bold uppercase tracking-wider">27B Nguyễn Thị Rành, xã Tân An Hội, Củ Chi, TP. Hồ Chí Minh</span>
                 </div>
               </div>
             </motion.div>

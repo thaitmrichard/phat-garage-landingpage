@@ -22,7 +22,7 @@ export default function Contact() {
               SẴN SÀNG PHỤC VỤ<br />
               <span className="text-brand-orange">XẾ YÊU CỦA BẠN</span>
             </h2>
-            
+
             <div className="space-y-8 mb-12">
               <div className="flex items-start gap-6">
                 <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-brand-orange shrink-0 border border-white/5">
@@ -33,7 +33,7 @@ export default function Contact() {
                   <p className="text-2xl font-black text-brand-orange tracking-tighter">033333 8481</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-6">
                 <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-brand-orange shrink-0 border border-white/5">
                   <MapPin size={24} />
@@ -77,7 +77,7 @@ export default function Contact() {
                 </div>
                 <h3 className="text-2xl font-black text-white uppercase italic tracking-tighter mb-4">Tìm chúng tôi trên bản đồ</h3>
                 <p className="text-gray-500 max-w-sm mx-auto mb-8">Google Maps sẽ được tích hợp tại đây để khách hàng dễ dàng tìm đường đến garage.</p>
-                <Button variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold uppercase">
+                <Button onClick={() => window.open('https://maps.app.goo.gl/9YNTZ4MXbapqJxcT8.', '_blank')} variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold uppercase">
                   Mở Google Maps
                 </Button>
               </div>
