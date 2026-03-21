@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Phát Garage Củ Chi - Chăm sóc xe bằng công nghệ & tâm huyết",
-  description: "Hệ thống sửa chữa và bảo dưỡng ô tô hiện đại nhất tại Củ Chi. Chuyên bảo dưỡng, sửa chữa, detailing và cứu hộ 24/7.",
+  description: "Hệ thống sửa chữa và bảo dưỡng ô tô hiện đại tại Củ Chi. Chuyên bảo dưỡng, sửa chữa, detailing và cứu hộ 24/7.",
 };
 
 import Hero from "@/components/Hero";

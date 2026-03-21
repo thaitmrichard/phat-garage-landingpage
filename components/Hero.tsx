@@ -36,7 +36,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl leading-relaxed">
-              Hệ thống sửa chữa và bảo dưỡng ô tô hiện đại nhất tại Củ Chi.
+              Hệ thống sửa chữa và bảo dưỡng ô tô hiện đại tại Củ Chi.
               Chúng tôi cam kết mang lại sự an tâm tuyệt đối và dịch vụ đẳng cấp cho xế cưng của bạn.
             </p>
 

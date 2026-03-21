@@ -13,7 +13,7 @@ const services = [
   },
   {
     title: "Tư vấn & Chẩn đoán",
-    description: "Advisor chuyên nghiệp chẩn đoán lỗi bằng thiết bị hiện đại, đưa ra hướng xử lý và báo giá chi tiết, minh bạch.",
+    description: "Cố vấn chuyên nghiệp chẩn đoán lỗi bằng thiết bị hiện đại, đưa ra hướng xử lý và báo giá chi tiết, minh bạch.",
     icon: ClipboardList,
   },
   {
@@ -64,7 +64,7 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => (
-            <ServiceCard 
+            <ServiceCard
               key={index}
               index={index}
               {...service}
