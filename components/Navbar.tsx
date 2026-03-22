@@ -30,8 +30,8 @@ export default function Navbar() {
     <nav
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent',
-        scrolled 
-          ? 'bg-black/90 backdrop-blur-md border-white/10 py-3' 
+        scrolled
+          ? 'bg-black/90 backdrop-blur-md border-white/10 py-3'
           : 'bg-transparent py-5'
       )}
     >
@@ -40,9 +40,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="relative w-12 h-12 transform group-hover:scale-110 transition-transform">
-              <Image 
-                src="/images/logo_phat.png" 
-                alt="Phát Garage Logo" 
+              <Image
+                src="/images/logo_phat.png"
+                alt="Phát Garage Logo"
                 fill
                 className="object-contain"
               />
@@ -63,7 +63,7 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button 
+            <Button onClick={() => window.open('https://portal.phatgarage.com/login', '_blank')}
               className="bg-brand-orange hover:bg-orange-700 text-white font-bold uppercase tracking-tighter transition-all hover:scale-105 active:scale-95"
             >
               Đặt lịch ngay
@@ -100,7 +100,7 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Button 
+              <Button onClick={() => setIsOpen(false)}
                 className="bg-brand-orange hover:bg-orange-700 text-white font-bold uppercase tracking-tighter w-full py-6 text-lg"
               >
                 Đặt lịch ngay

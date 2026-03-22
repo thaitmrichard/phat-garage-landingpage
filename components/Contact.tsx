@@ -77,7 +77,7 @@ export default function Contact() {
                 </div>
                 <h3 className="text-2xl font-black text-white uppercase italic tracking-tighter mb-4">Tìm chúng tôi trên bản đồ</h3>
                 <p className="text-gray-500 max-w-sm mx-auto mb-8">Google Maps sẽ được tích hợp tại đây để khách hàng dễ dàng tìm đường đến garage.</p>
-                <Button onClick={() => window.open('https://maps.app.goo.gl/9YNTZ4MXbapqJxcT8.', '_blank')} variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold uppercase">
+                <Button onClick={() => window.open('https://maps.app.goo.gl/9YNTZ4MXbapqJxcT8', '_blank')} variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold uppercase">
                   Mở Google Maps
                 </Button>
               </div>
